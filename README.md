@@ -23,8 +23,7 @@ This is a project from [The Odin Project](https://theodinproject.com): [Project:
 
 ## Roadmap
 
-- [ ] Setting up the Webpack template, and the index HTML and JS files
+- [x] Setting up the Webpack template, and the index HTML and JS files
 - [ ] Writing a functionality to make the code work on the console first
 - [ ] Created a home page for the Restaurant Page
 - [ ] Created tab switching logic in the Restaurant Page
-
