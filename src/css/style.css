@@ -35,33 +35,35 @@ body {
 
 header.website-header {
   background-color: var(--header-background);
-  display: flex;
   padding: 1rem 10rem;
-  justify-content: space-between;
-}
-
-header .header-left-content,
-.header-right-content {
-  font-size: 1.5rem;
-  display: flex;
-  gap: 2rem;
-  align-items: center;
-}
-
-header .website-navigation {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   align-items: center;
 }
 
 header .website-logo {
+  display: flex;
+  gap: 0.5rem;
+}
+
+header .website-logo-img {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+header .website-logo-text {
   font-size: 2.5rem;
+}
+
+header .website-navigation {
+  font-size: 1.5rem;
+  display: grid;
+  justify-self: center;
 }
 
 header .website-navigation > .links-container {
   list-style-type: none;
   display: flex;
-  align-items: center;
-  justify-content: center;
   gap: 1rem;
 }
 
@@ -72,18 +74,23 @@ header .link > a {
   text-decoration: none;
 }
 
-header .header-book-table {
-  font-size: 1.3rem;
-  font-family: inherit;
-  background: none;
-  border: 2px solid var(--header-and-main-text);
+header a.chosen-link {
+  background-color: var(--header-and-main-text);
+  color: var(--header-background);
+  border-radius: 0.25rem;
   padding: 0.5rem;
-  border-radius: 0.5rem;
 }
 
 header .menu-icon {
+  display: grid;
+  justify-self: end;
   width: 3rem;
   height: 3rem;
+}
+
+main > h1 {
+  text-align: center;
+  margin-top: 1rem;
 }
 
 footer.website-footer {

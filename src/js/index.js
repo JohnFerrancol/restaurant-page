@@ -1,4 +1,4 @@
 import "../css/style.css";
-import { loadHome } from "./loadHome.js";
+import { renderHome } from "./tabs/home.js";
 
-console.log(loadHome);
+renderHome();
