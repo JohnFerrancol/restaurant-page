@@ -7,6 +7,18 @@
   font-style: normal;
 }
 
+@media screen and (max-width: 2560px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1920px) {
+  html {
+    font-size: 12px;
+  }
+}
+
 :root {
   --header-background: #ffffff;
   --main-background: #fbfbfb;
