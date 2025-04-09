@@ -9,13 +9,13 @@
 
 @media screen and (max-width: 2560px) {
   html {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 
 @media screen and (max-width: 1920px) {
   html {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 
@@ -23,6 +23,8 @@
   --header-background: #ffffff;
   --main-background: #fbfbfb;
   --header-and-main-text: #212216;
+  --reserve-table-text: var(--header-background);
+  --reserve-table-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
   --footer-background: #272b35;
   --footer-text: #f7f7f7;
   --footer-icon-color: invert(100%) sepia(1%) saturate(420%) hue-rotate(91deg)
@@ -100,9 +102,103 @@ header .menu-icon {
   height: 3rem;
 }
 
-main > h1 {
-  text-align: center;
+main#content.home {
+  display: grid;
+  grid-template-rows: 2fr auto auto;
+  padding: 3rem 10rem;
+  gap: 3rem;
+  font-size: 1.5rem;
+}
+
+main.home .reserve-table {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  background: url("../assets/img/pizza.jpg");
+  background-size: 100% 100%;
+  width: 80vw;
+  height: 70vh;
+  border-radius: 2.5rem;
+  justify-self: center;
+  color: var(--reserve-table-text);
+  text-shadow: var(--reserve-table-shadow);
+}
+
+main.home .reserve-table-header {
+  font-weight: 1000;
+  font-size: 3rem;
+}
+
+main.home .reserve-table-text {
+  font-size: 3.5rem;
+  font-weight: 1200;
+  font-style: italic;
+}
+
+main.home .reserve-table-button {
+  background: none;
+  color: var(--reserve-table-text);
+  text-shadow: inherit;
+  font-size: 2.5rem;
+  font-weight: 1000;
+  padding: 1rem;
+  border: 3px solid var(--reserve-table-text);
+  border-radius: 0.5rem;
+}
+
+main.home .about-us {
+  padding: 1rem 25rem;
+  display: flex;
+  gap: 2.5rem;
+}
+
+main.home .about-us-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+main.home .learn-more-button {
+  background: none;
+  color: inherit;
+  font-size: inherit;
+  border: 2px solid var(--header-and-main-text);
+  border-radius: 0.25rem;
+  padding: 1rem;
+  align-self: flex-start;
+}
+
+main.home .about-us-image {
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  width: auto;
+  height: 20rem;
+}
+
+main.home .opening-hours {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--header-background);
+  border-radius: 2rem;
+  width: 30%;
+  justify-self: center;
+  padding: 2rem 0;
+}
+
+main.home .opening-hours-container {
   margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-content: center;
+  gap: 1rem;
 }
 
 footer.website-footer {
@@ -118,7 +214,7 @@ footer.website-footer {
 footer .footer-content {
   font-size: 1.1rem;
   display: flex;
-  gap: 5rem;
+  gap: 1rem;
   margin-bottom: 1.25rem;
 }
 
