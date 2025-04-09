@@ -304,7 +304,7 @@ main.contact .input-wrapper > input {
   border-bottom: 2px solid var(--header-and-main-text);
   color: var(--header-and-main-text);
   background-color: transparent;
-  padding: 15px 5px 5px;
+  padding: 20px 5px 5px;
 }
 
 main.contact .input-wrapper > label {
