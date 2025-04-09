@@ -37,7 +37,7 @@ export function renderHome() {
 
   const aboutUsSectionDescription = document.createElement("p");
   aboutUsSectionDescription.textContent =
-    "Here at OdinPizza, our daily goal is to create, serve and enjoy authentic Italian food. We love fresh and flavorful food. Every morning before opening the OdinPizza kitchen, we stock our shelves with market fresh ingredients, so that the food we serve you is as fresh and flavorful as can be. We welcome you to our restaurant, and wish you a hearty appetite. ";
+    "Here at OdinPizza, our daily goal is to create, serve and enjoy authentic Italian food. We love fresh and flavorful food. Every morning before opening the OdinPizza kitchen, we stock our shelves with market fresh ingredients, so that the food we serve you is as fresh and flavorful as can be. ";
   aboutUsSectionDescription.classList.add("about-us-description");
   aboutUsContent.appendChild(aboutUsSectionDescription);
 
