@@ -21,10 +21,13 @@
 
 :root {
   --header-background: #ffffff;
+  --header-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
   --main-background: #fbfbfb;
+  --main-alternate-background: var(--header-background);
   --header-and-main-text: #212216;
   --reserve-table-text: var(--header-background);
   --reserve-table-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+  --content-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.16);
   --footer-background: #272b35;
   --footer-text: #f7f7f7;
   --footer-icon-color: invert(100%) sepia(1%) saturate(420%) hue-rotate(91deg)
@@ -53,6 +56,7 @@ header.website-header {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
+  box-shadow: var(--header-box-shadow);
 }
 
 header .website-logo {
@@ -105,12 +109,13 @@ header .menu-icon {
 main#content.home {
   display: grid;
   grid-template-rows: 2fr auto auto;
-  padding: 3rem 10rem;
   gap: 3rem;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
+  padding: 3rem 0;
 }
 
 main.home .reserve-table {
+  padding: 0 10rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -118,8 +123,8 @@ main.home .reserve-table {
   gap: 3rem;
   background: url("../assets/img/pizza.jpg");
   background-size: 100% 100%;
-  width: 80vw;
-  height: 70vh;
+  width: 95rem;
+  height: calc(95rem / 7 * 4);
   border-radius: 2.5rem;
   justify-self: center;
   color: var(--reserve-table-text);
@@ -128,7 +133,7 @@ main.home .reserve-table {
 
 main.home .reserve-table-header {
   font-weight: 1000;
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 main.home .reserve-table-text {
@@ -141,17 +146,20 @@ main.home .reserve-table-button {
   background: none;
   color: var(--reserve-table-text);
   text-shadow: inherit;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 1000;
   padding: 1rem;
   border: 3px solid var(--reserve-table-text);
   border-radius: 0.5rem;
+  margin-top: 18rem;
 }
 
 main.home .about-us {
   padding: 1rem 25rem;
   display: flex;
   gap: 2.5rem;
+  background-color: var(--main-alternate-background);
+  box-shadow: var(--header-box-shadow);
 }
 
 main.home .about-us-content {
@@ -185,9 +193,10 @@ main.home .opening-hours {
   gap: 1rem;
   justify-content: center;
   align-items: center;
-  background-color: var(--header-background);
-  border-radius: 2rem;
-  width: 30%;
+  background-color: var(--main-alternate-background);
+  box-shadow: var(--content-box-shadow);
+  border-radius: 1rem;
+  width: 20%;
   justify-self: center;
   padding: 2rem 0;
 }
@@ -199,6 +208,49 @@ main.home .opening-hours-container {
   grid-template-rows: repeat(2, 1fr);
   justify-content: center;
   gap: 1rem;
+}
+
+main#content.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  padding: 2rem 10rem;
+}
+
+main.menu .menu-header-container {
+  align-self: center;
+}
+
+main.menu .menu-header {
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+main.menu hr {
+  width: 100%;
+}
+
+main.menu .menu-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1rem;
+}
+
+main.menu .dish-container {
+  font-size: 1.1rem;
+  box-shadow: var(--content-box-shadow);
+  background-color: var(--main-alternate-background);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+main.menu .dish-name {
+  font-size: 1.25rem;
+  font-style: italic;
 }
 
 footer.website-footer {
@@ -214,7 +266,7 @@ footer.website-footer {
 footer .footer-content {
   font-size: 1.1rem;
   display: flex;
-  gap: 1rem;
+  gap: 3rem;
   margin-bottom: 1.25rem;
 }
 

@@ -26,6 +26,10 @@ document.addEventListener("DOMContentLoaded", () => {
 function renderTab(tabSelected) {
   const mainElement = document.querySelector("#content");
 
+  // Remove the current class on the main#content element
+  mainElement.className = "";
+  mainElement.classList.add(tabSelected);
+
   // Clear the main content
   mainElement.innerHTML = "";
 
