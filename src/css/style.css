@@ -30,6 +30,8 @@
   --content-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.16);
   --footer-background: #272b35;
   --footer-text: #f7f7f7;
+  --valid-color: #00b14f;
+  --error-message-color: #ed4337;
   --footer-icon-color: invert(100%) sepia(1%) saturate(420%) hue-rotate(91deg)
     brightness(119%) contrast(94%);
 }
@@ -251,6 +253,115 @@ main.menu .dish-container {
 main.menu .dish-name {
   font-size: 1.25rem;
   font-style: italic;
+}
+
+main#content.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  padding: 2rem 10rem;
+}
+
+main.contact .contact-header-container {
+  align-self: center;
+}
+
+main.contact .contact-header {
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+main.contact hr {
+  width: 100%;
+}
+
+main.contact .contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+main.contact .input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+main.contact .input-wrapper {
+  position: relative;
+}
+
+main.contact .input-wrapper > input {
+  font-family: inherit;
+  font-size: 1.2rem;
+  line-height: 1.4;
+  width: 20vw;
+  border: none;
+  border-bottom: 2px solid var(--header-and-main-text);
+  color: var(--header-and-main-text);
+  background-color: transparent;
+  padding: 15px 5px 5px;
+}
+
+main.contact .input-wrapper > label {
+  position: absolute;
+  font-size: 1.2rem;
+  color: var(--header-and-main-text);
+  pointer-events: none;
+  left: 0.1rem;
+  top: 50%;
+  transition: all 0.3s ease-in-out;
+}
+
+main.contact input:focus {
+  outline: none;
+}
+
+main.contact input:valid,
+input:focus:valid {
+  border-color: var(--valid-color);
+}
+
+main.contact input:invalid,
+main.contact input:focus:invalid {
+  border-color: var(--error-message-color);
+}
+
+main.contact input:focus + label,
+main.contact input:valid + label {
+  top: 5px;
+  font-size: 1rem;
+}
+
+main.contact input:valid + label {
+  color: var(--valid-color);
+}
+
+main.contact input:invalid + label {
+  color: var(--error-message-color);
+}
+
+main.contact textarea {
+  padding: 1rem;
+  font-family: inherit;
+  font-size: 1.2rem;
+}
+
+main.contact textarea:focus {
+  outline: none;
+}
+
+main.contact .form-submit-button {
+  background: none;
+  font-size: 1.5rem;
+  font-family: inherit;
+  border-radius: 0.5rem;
+  border: 2px solid var(--header-and-main-text);
+  padding: 0.5rem 1rem;
 }
 
 footer.website-footer {

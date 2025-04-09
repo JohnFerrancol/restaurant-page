@@ -24,7 +24,7 @@ This is a project from [The Odin Project](https://theodinproject.com): [Project:
 ## Roadmap
 
 - [x] Setting up the Webpack template, and the index HTML and JS files
-- [x] Added header and footer HTML pages 
+- [x] Added header and footer HTML pages
 - [x] Created a home page by adding content to the main element of the HTML for the website using JS
 - [x] Created tab switching logic in the Restaurant Page
-- [ ] Populate content for the menu and contact tab
+- [x] Populate content for the menu and contact tab
