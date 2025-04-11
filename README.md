@@ -21,6 +21,33 @@ This is a project from [The Odin Project](https://theodinproject.com): [Project:
 - [![npm](https://img.shields.io/badge/npm-CB3837?logo=npm&logoColor=fff)](#)
 - [![Webpack](https://img.shields.io/badge/webpack-%238DD6F9.svg?&logo=webpack&logoColor=black)](#)
 
+## Getting Started
+
+This is an example of how you may give instructions on setting up your project locally.
+To get a local copy up and running follow these simple example steps.
+
+### Prerequisites
+
+This is an example of how to list things you need to use the software and how to install them.
+* npm
+  ```sh
+  npm install npm@latest -g
+  ```
+
+### Installation
+1) Cloning the Github Repository
+   ```sh
+   git clone git@github.com:JohnFerrancol/restaurant-page.git
+   ```
+3) Installing npm packages
+  ```sh
+  npm install
+  ```
+3) Running the webpack server
+  ```sh
+  npm run serve
+  ```
+
 ## Roadmap
 
 - [x] Setting up the Webpack template, and the index HTML and JS files
