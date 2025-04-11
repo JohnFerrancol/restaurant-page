@@ -23,23 +23,21 @@ This is a project from [The Odin Project](https://theodinproject.com): [Project:
 
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
-
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
+You will need to install the latest version of npm to get started on using this project
 * npm
-  ```sh
-  npm install npm@latest -g
-  ```
+ ```sh
+ npm install npm@latest -g
+ ```
 
 ### Installation
-1) Cloning the Github Repository
-   ```sh
-   git clone git@github.com:JohnFerrancol/restaurant-page.git
-   ```
-3) Installing npm packages
+Getting started on running the webpack server to your localhost, localhost:8080
+1) Running the webpack server
+  ```sh
+  git clone git@github.com:JohnFerrancol/restaurant-page.git
+  ```
+2) Installing npm packages
   ```sh
   npm install
   ```
